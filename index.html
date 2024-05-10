@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is my description">
+    <title>Personal Form</title>
+    <link rel="icon" type="image" href="img/personal-data.png">
+</head>
+<body style="background-color: #191919;color:white;">
+    <form>
+        <fieldset style="background-color: 092635;">
+            <legend>
+                <h1 style="background-color: C21292;">Personal Data</h1>
+            </legend>
+            <fieldset style="background-color: 607274;">
+                <legend>
+                    <h2 style="background-color: 392467;">Your Name</h2>
+                </legend>
+                <table>
+                    <tr>
+                        <td><label for="fname">First Name</label></td>
+                        <td><b>:</b></td>
+                        <td><input id="fname" name="fname" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sname">Second Name</label></td>
+                        <td><b>:</b></td>
+                        <td><input id="sname" name="sname" type="text" /></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset style="background-color: 607274;">
+                <legend>
+                    <h2 style="background-color: 392467;">Your Contacts</h2>
+                </legend>
+                <table>
+                    <tr>
+                        <td><label for="phone">your phone</label></td>
+                        <td><b>:</b></td>
+                        <td><input id="phone" name="phone" type="number" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">Email</label></td>
+                        <td><b>:</b></td>
+                        <td><input id="mail" name="mail" type="email" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">password</label></td>
+                        <td><b>:</b></td>
+                        <td><input id="password" name="password" type="password" minlength="4" maxlength="12" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="re-password">re-password</label></td>
+                        <td><b>:</b></td>
+                        <td><input id="re-password" name="re-password" type="password" minlength="4" maxlength="12" />
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset style="background-color: 607274;">
+                <legend>
+                    <h2 style="background-color: 392467;">Your Gender</h2>
+                </legend>
+                <table>
+                    <tr>
+                        <td><input id="gender1" name="gender" type="radio" value="male" /></td>
+                        <td><label for="gender1">male</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="gender2" name="gender" type="radio" value="female" /></td>
+                        <td><label for="gender2">female</label></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset style="background-color: 607274;">
+                <legend>
+                    <h2 style="background-color: 392467;">Your Study Status</h2>
+                </legend>
+                <table>
+                    <tr>
+                        <td><input id="student" name="study" type="checkbox" value="student" /></td>
+                        <td><label for="student">student</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="graduated" name="study" type="checkbox" value="graduated" /></td>
+                        <td><label for="graduated">graduated</label></td>
+                    </tr>
+                </table>
+                <br />
+                <select name="specialty">
+                    <optgroup label="Ain-shams university">
+                        <option value="Ainshams-ComputerScience">[Ain-shams] Faculty of Computer Science</option>
+                    </optgroup>
+                    <optgroup label="Cairo university">
+                        <option value="Cairo-ComputerScience">[Cairo] Faculty of Computer Science</option>
+                        <option value="Cairo-Engneering">[Cairo] Faculty of Engneering</option>
+                        <option value="Cairo-Commerce">[Cairo] Faculty of Commerce</option>
+                    </optgroup>
+                    <optgroup label="helwan university" disabled>
+                        <option value="helwan-ComputerScience">[Helwan] Faculty of Computer Science</option>
+                        <option value="helwan-Engneering">[Helwan] Faculty of Engneering</option>
+                        <option value="helwan-Commerce">[Helwan] Faculty of Commerce</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <br />
+            <input type="image" src="img/register.png" alt="register" width="100" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
